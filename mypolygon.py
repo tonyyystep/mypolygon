@@ -1,12 +1,19 @@
 import turtle
 bob = turtle.Turtle()
 print(bob)
-
-def square(t):
+def square(t, lenght):
   
-    for i in range(t):
+    for i in range(4):
         print('Hello')
-        bob.fd(100)
+        bob.fd(lenght)
         bob.lt(90)
-square(bob)
+        
+
+def polygon(t, n, z):
+  
+    for i in range(n):
+        bob.fd(z)
+        bob.lt(360/n)
+
+polygon(bob, 10, 100)
 turtle.mainloop()
